@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-TARGET_MEDIATEK_COMMON := mt6750
+TARGET_MEDIATEK_COMMON := mt6757
 
 COMMON_PATH := device/mediatek/mt6757-common
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
@@ -22,7 +22,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 TARGET_BOARD_PLATFORM := mt6757
 
 # Architecture
-ifeq ($(FORCE_32_BIT),true)
+ifeq ($(FORCE_32_BIT),false)
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
